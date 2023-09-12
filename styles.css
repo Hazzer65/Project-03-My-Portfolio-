@@ -1,0 +1,90 @@
+/* Reset some default styles */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styling */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+header {
+    background-color: #007BFF;
+    color: white;
+    padding: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Unvisited links */
+a {
+    color: #2e2aa4; /* Set the default link color */
+    text-decoration: none; /* Remove underlines from links */
+}
+
+/* Visited links */
+a:visited {
+    color: #3537d0; /* Set the color for visited links */
+}
+
+/* Mouse over links */
+a:hover {
+    color: #39cc4f; /* Set the color when hovering over links */
+    text-decoration: underline; /* Add underlines on hover */
+}
+
+/* Active links (clicked) */
+a:active {
+    color: #2823b0; /* Set the color for active links (when clicked) */
+}
+
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    padding: 10px 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+
+
+nav a:hover {
+    background-color: #555;
+}
+
+section {
+    padding: 30px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.project {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #007BFF;
+    color: white;
+    clear: both;
+}

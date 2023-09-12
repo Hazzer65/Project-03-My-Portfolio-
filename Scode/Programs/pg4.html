@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Project 1 - Code Showcase</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../index.html">Index</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="code-description">
+        <h1>Code Description</h1>
+        <p>Provide a detailed description of your code here.</p>
+    </section>
+
+    <section id="source-code">
+        <h1>Source Code</h1>
+        <pre><code>
+     
+#include <iostream>
+    using namespace std;
+    double volume(double a)
+    {
+        return(a*a*a);
+    }
+    double volume(double r,double h)
+    {
+        return(3.14*r*r*h);
+    }
+    double volume(double l,double b,double h)
+    {
+        return (l*b*h);
+    }
+    int main()
+    {
+        double a=10;
+        double r=3,h=1;
+        double l=1.1,b=2.1,w=3.1;
+        cout<<"\nVolume of cube : "<< volume(a);
+          cout<<" \n Volume of cylinder : "<< volume(r,h);
+          cout<<" \n Volume of cuboid : "<< volume(l,b,w);
+    }
+    
+     </code></pre>
+    </section>
+
+    <section id="output">
+        <h1>Output</h1>
+        <img src="4.jpg" alt="Project 1 Output">
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Your Name</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

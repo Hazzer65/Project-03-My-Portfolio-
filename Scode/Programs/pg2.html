@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Project 1 - Code Showcase</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../index.html">Index</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="code-description">
+        <h1>Code Description</h1>
+        <p>Provide a detailed description of your code here.</p>
+    </section>
+
+    <section id="source-code">
+        <h1>Source Code</h1>
+       <pre><code>
+       
+        // C++ program to implement iterative Binary Search
+        #include <bits/stdc++.h>
+        using namespace std;
+        
+        // An iterative binary search function.
+        int binarySearch(int arr[], int l, int r, int x)
+        {
+            while (l <= r) {
+                int m = l + (r - l) / 2;
+        
+                // Check if x is present at mid
+                if (arr[m] == x)
+                    return m;
+        
+                // If x greater, ignore left half
+                if (arr[m] < x)
+                    l = m + 1;
+        
+                // If x is smaller, ignore right half
+                else
+                    r = m - 1;
+            }
+        
+            // If we reach here, then element was not present
+            return -1;
+        }
+        
+        // Driver code
+        int main(void)
+        {
+            int arr[] = { 2, 3, 4, 10, 40 };
+            int x = 10;
+            int n = sizeof(arr) / sizeof(arr[0]);
+            int result = binarySearch(arr, 0, n - 1, x);
+            (result == -1)
+                ? cout << "Element is not present in array"
+                : cout << "Element is present at index " << result;
+            return 0;
+        }
+        
+                
+        </code></pre>
+    </section>
+
+    <section id="output">
+        <h1>Output</h1>
+        <img src="2.jpg" alt="Project 1 Output">
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Your Name</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
